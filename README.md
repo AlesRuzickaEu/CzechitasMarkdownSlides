@@ -1,4 +1,10 @@
-# Czechias Markdown slides is JS+CSS template for making quick presentations for Czechitas using corporate identity
+# Czechitas Markdown slides is JS+CSS template for making quick presentations using Czechitas corporate identity
 
 * For details check `example.html` file
-* Czechitas logos belong to  Czechitas z.s. and this repository does not give any rights to them
+* All dependecies can be also merged and distributed as single file (`slides.dist.js`), see `emptyTemplate.html` for that
+* Single file generation is made using [LINQpad](https://www.linqpad.net/) and file `GenerateSingleFile.linq`
+* Czechitas logos belong to Czechitas z.s.
+
+### Todo
+
+* Ability to work with presentation on touch screens
