@@ -1,0 +1,155 @@
+/* Common */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body > code {
+    width: 99vw;
+    min-height: 100vh;
+    padding: 5vh 5vw;
+    margin: 0;
+    box-sizing: border-box;
+    background-position: right 5vw top 5vh;
+    background-repeat: no-repeat;
+    background-image: url('logoColor.svg');
+    background-size: 15vw;
+
+    font-family: Tahoma;
+    display: none;
+    font-size: 5vh;
+    line-height: 200%;
+}
+
+body > code:target {
+    display: block;
+}
+
+body > code::after {
+    display: block;
+    position: absolute;
+    content: attr(data-page)'/'attr(data-total);
+    bottom: 1vh;
+    left: 1vh;
+    font-size: 2vh;
+    font-family: Tahoma;
+    line-height: normal;
+    text-align: right;
+}
+
+h1, h2, h3 {
+    color: #2B3990;
+    font-weight: normal;
+    font-size: 8vh;
+}
+h2 {
+    font-size: 7vh;
+}
+h3 {
+    font-size: 6vh;
+}
+
+a, em {
+    color: #e5007d;
+    font-style: normal;
+}
+
+img {
+    max-width: 90vw;
+    max-height: 70vh;
+}
+
+ul {
+    list-style: disc;
+}
+
+/* Compact */
+.compact {
+    line-height: 150%;
+}
+
+/* Fullscreen */
+.fullscreen {
+    padding: 0;
+}
+.fullscreen  img {
+    max-width: 99vw;
+    max-height: 100vh;
+}
+
+/* Standout */
+.standout {
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    font-size: 10vh;
+    line-height: 85vh;
+}
+.standout p {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+/* Centered */
+.centered p {
+    text-align: center;
+}
+
+/* Inverted */
+.inverted {
+    background-color: #2D2E82;
+    color: #fff;
+    background-image: url('logoWhite.svg')
+}
+.inverted h1, .inverted h2, .inverted h3 {
+    color: #fff;
+}
+
+/* Print */
+@media print {
+    body > code, .inverted {
+        display: block;
+        background-color: #fff;
+        color: #000;
+        background-image: none;
+        padding: 2vh 2vw;
+        line-height: 150%;
+    }
+    h1, h2, h3, 
+    .inverted h1, .inverted h2, .inverted h3 {
+        color: #000;
+    }
+    
+    .compact {
+        line-height: 120%;
+    }
+    body > code::after {
+        display: none;
+    }
+    em {
+        color: #000;
+        font-style: italic;
+    }
+    a {
+        color: #000;
+    }
+}
+
+/* Fonts */
+/* latin-ext */
+@font-face {
+    font-family: 'Amatic SC';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Amatic SC Regular'), local('AmaticSC-Regular'), url(https://fonts.gstatic.com/s/amaticsc/v11/TUZyzwprpvBS1izr_vOEBOSfQZQ.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Amatic SC';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Amatic SC Regular'), local('AmaticSC-Regular'), url(https://fonts.gstatic.com/s/amaticsc/v11/TUZyzwprpvBS1izr_vOECuSf.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+  
