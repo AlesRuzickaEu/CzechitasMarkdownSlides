@@ -7,7 +7,7 @@ body {
 body > code {
     width: 99vw;
     min-height: 100vh;
-    padding: 5vh 5vw;
+    padding: 5vh 0 0 5vw;
     margin: 0;
     box-sizing: border-box;
     background-position: right 5vw top 5vh;
