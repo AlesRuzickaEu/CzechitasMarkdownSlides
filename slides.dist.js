@@ -32,35 +32,35 @@
         }
     })
 
-    document.addEventListener('mousedown', e => {
-        if (e.ctrlKey || e.altKey) {
-            return
-        }
-        if (e.which === 1) {
-            move(1)
-        } else if (e.which === 3) {
-            move(-1)
-        }
+    // document.addEventListener('mousedown', e => {
+    //     if (e.ctrlKey || e.altKey) {
+    //         return
+    //     }
+    //     if (e.which === 1) {
+    //         move(1)
+    //     } else if (e.which === 3) {
+    //         move(-1)
+    //     }
 
-        e.preventDefault()
-    })
+    //     e.preventDefault()
+    // })
 
-    document.addEventListener('wheel', e => {
-        if (e.ctrlKey || e.altKey) {
-            return
-        }
-        if (e.deltaY > 0) {
-            move(1)
-        } else if (e.deltaY < 0) {
-            move(-1)
-        }
+    // document.addEventListener('wheel', e => {
+    //     if (e.ctrlKey || e.altKey) {
+    //         return
+    //     }
+    //     if (e.deltaY > 0) {
+    //         move(1)
+    //     } else if (e.deltaY < 0) {
+    //         move(-1)
+    //     }
 
-        e.preventDefault()
-    })
+    //     e.preventDefault()
+    // })
 
-    document.addEventListener('contextmenu', e => {
-        e.preventDefault()
-    })
+    // document.addEventListener('contextmenu', e => {
+    //     e.preventDefault()
+    // })
 
     const slides = document.querySelectorAll('body > code')
 
